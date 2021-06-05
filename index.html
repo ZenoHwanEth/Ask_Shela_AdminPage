@@ -1,0 +1,544 @@
+<html>
+    <head>
+        <title>Ask Shela Admin</title>
+        <meta charset="UTF-8">
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">  
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+    <div class="navbar bd-navbar">
+        <div class="container horizontal-align" >
+            <img src="image\happy.jpg" alt="" width="50" height="40">
+            <h4 style="padding-left: 3rem;"> Ask Shela Admin Page </h4>
+        </div>
+    </div>
+    <div class="enlarge-modal" id="enlarge_modal">
+        <span class="close_modal">&times;</span>
+        <img class="modal-content" id="enlarge_img">
+      </div>
+
+    <div class="container" style="margin-top: 2rem;">
+        <div class="card border">
+            <div class="card-body">
+                <h2 class="card-title"><mark style="background-color:rgb(212, 235, 189);">Updates Pictures</mark></h2>
+                <p class="card-text">You can update the pictures on AskShela Chatbot.</p>
+                <hr>
+                
+                <!-- accordion-picture -->
+                <div class="accordion" id="accordion-picture">
+
+                    <!--master-in-data-analytic-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-picture-master-in-data-analytic">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-picture-master-in-data-analytic" aria-expanded="true" aria-controls="collapse-picture-master-in-data-analytic">
+                            <h3 class="card-title"><mark>Pictures (Master in Data Analytic)</mark></h3>
+                        </button>
+                      </h2>
+                      <div id="collapse-picture-master-in-data-analytic" class="accordion-collapse collapse " aria-labelledby="header-picture-master-in-data-analytic" data-bs-parent="#accordion-picture">
+                        <div class="accordion-body">
+                            <!-- Ms data analytic - core.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Ms data analytic - core.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('Ms data analytic - core.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-Ms-data-analytic-core" onchange="browseFile('Ms-data-analytic-core','input-Ms-data-analytic-core')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('Ms-data-analytic-core','input-Ms-data-analytic-core')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('Ms data analytic - core.png','Ms-data-analytic-core','input-Ms-data-analytic-core','upProgress-Ms-data-analytic-core')">Upload & Update Image</button> 
+                                    <label id="upProgress-Ms-data-analytic-core"></label>
+                                </div>
+                                <img id="Ms-data-analytic-core" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- Ms data analytic - core.png END-->
+
+                            <!-- data science - project.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Ms data science - project.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('Ms data science - project.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-Ms-data-science-project" onchange="browseFile('Ms-data-science-project','input-Ms-data-science-project')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('Ms-data-science-project','input-Ms-data-science-project')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('Ms data science - project.png','Ms-data-science-project','input-Ms-data-science-project','upProgress-Ms-data-science-project')">Upload & Update Image</button> 
+                                    <label id="upProgress-Ms-data-science-project"></label>
+                                </div>
+                                <img id="Ms-data-science-project" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- data science - project.png END-->
+
+                            <!-- elective business analytic.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">elective business analytic.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('elective business analytic.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-elective-business-analytic" onchange="browseFile('elective-business-analytic','input-elective-business-analytic')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('elective-business-analytic','input-elective-business-analytic')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('elective business analytic.png','elective-business-analytic','input-elective-business-analytic','upProgress-elective-business-analytic')">Upload & Update Image</button> 
+                                    <label id="upProgress-elective-business-analytic"></label>
+                                </div>
+                                <img id="elective-business-analytic" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- elective business analytic.png END-->
+
+                            <!-- elective multimodal analytic.png-->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">elective multimodal analytic.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('elective multimodal analytic.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-elective-multimodal-analytic" onchange="browseFile('elective-multimodal-analytic','input-elective-multimodal-analytic')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('elective-multimodal-analytic','input-elective-multimodal-analytic')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('elective multimodal analytic.png','elective-multimodal-analytic','input-elective-multimodal-analytic','upProgress-elective-multimodal-analytic')">Upload & Update Image</button> 
+                                    <label id="upProgress-elective-multimodal-analytic"></label>
+                                </div>
+                                <img id="elective-multimodal-analytic" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- elective multimodal analytic.png END-->
+
+                            <!-- evaluation.png-->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">evaluation.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('evaluation.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-evaluation" onchange="browseFile('evaluation','input-evaluation')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('evaluation','input-evaluation')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('evaluation.png','evaluation','input-evaluation','upProgress-evaluation')">Upload & Update Image</button> 
+                                    <label id="upProgress-evaluation"></label>
+                                </div>
+                                <img id="evaluation" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- evaluation.png END-->
+
+                            <!-- graduation requirement.png-->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">graduation requirement.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('graduation requirement.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-graduation-requirement" onchange="browseFile('graduation-requirement','input-graduation-requirement')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('graduation-requirement','input-graduation-requirement')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('graduation requirement.png','graduation-requirement','input-graduation-requirement','upProgress-graduation-requirement')">Upload & Update Image</button> 
+                                    <label id="upProgress-graduation-requirement"></label>
+                                </div>
+                                <img id="graduation-requirement" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- graduation requirement.png END-->
+
+                            <!-- registration_fee.png-->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">registration_fee.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('registration_fee.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-registration_fee" onchange="browseFile('registration_fee','input-registration_fee')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('registration_fee','input-registration_fee')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('registration fee.png','registration_fee','input-registration_fee','upProgress-registration_fee')">Upload & Update Image</button> 
+                                    <label id="upProgress-registration_fee"></label>
+                                </div>
+                                <img id="registration_fee" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- registration_fee.png END-->    
+
+                            <!-- 1.5_y_scheme_msdtsc.png-->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">1.5_y_scheme_msdtsc.png (master in data science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('1.5_y_scheme_msdtsc.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-1.5_y_scheme_msdtsc" onchange="browseFile('1.5_y_scheme_msdtsc','input-1.5_y_scheme_msdtsc')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('1.5_y_scheme_msdtsc','input-1.5_y_scheme_msdtsc')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('1.5_y_scheme_msdtsc.png','1.5_y_scheme_msdtsc','input-1.5_y_scheme_msdtsc','upProgress-1.5_y_scheme_msdtsc')">Upload & Update Image</button> 
+                                    <label id="upProgress-1.5_y_scheme_msdtsc"></label>
+                                </div>
+                                <img id="1.5_y_scheme_msdtsc" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- 1.5_y_scheme_msdtsc.png END-->
+
+                            <!-- 2_y_scheme_msdtsc.png-->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">2_y_scheme_msdtsc.png (master in data science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('2_y_scheme_msdtsc.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-2_y_scheme_msdtsc" onchange="browseFile('2_y_scheme_msdtsc','input-2_y_scheme_msdtsc')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('2_y_scheme_msdtsc','input-2_y_scheme_msdtsc')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('2_y_scheme_msdtsc.png','2_y_scheme_msdtsc','input-2_y_scheme_msdtsc','upProgress-2_y_scheme_msdtsc')">Upload & Update Image</button> 
+                                    <label id="upProgress-2_y_scheme_msdtsc"></label>
+                                </div>
+                                <img id="2_y_scheme_msdtsc" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- 2_y_scheme_msdtsc.png END-->
+
+                            <!-- 2.5_y_scheme_msdtsc.png-->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">2.5_y_scheme_msdtsc.png (master in data science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('2.5_y_scheme_msdtsc.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-2.5_y_scheme_msdtsc" onchange="browseFile('2.5_y_scheme_msdtsc','input-2.5_y_scheme_msdtsc')"><br>
+                                    <button class="btn btn-light border" onclick="clearitem('2.5_y_scheme_msdtsc','input-2.5_y_scheme_msdtsc')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('2.5_y_scheme_msdtsc.png','2.5_y_scheme_msdtsc','input-2.5_y_scheme_msdtsc','upProgress-2.5_y_scheme_msdtsc')">Upload & Update Image</button> 
+                                    <label id="upProgress-2.5_y_scheme_msdtsc"></label>
+                                </div>
+                                <img id="2.5_y_scheme_msdtsc" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- 2_y_scheme_msdtsc.png END-->
+
+                        </div>
+                      </div>
+                    </div><!--master-in-data-analytic END-->
+                    
+                    <!-- master-in-computer-science -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="header-picture-master-in-computer-science">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-picture-master-in-computer-science" aria-expanded="false" aria-controls="collapse-picture-master-in-computer-science">
+                            <h3 class="card-title"><mark>Pictures (Master in Computer Science)</mark></h3>
+                          </button>
+                        </h2>
+                        <div id="collapse-picture-master-in-computer-science" class="accordion-collapse collapse" aria-labelledby="header-picture-master-in-computer-science" data-bs-parent="#accordion-picture">
+                          <div class="accordion-body">
+
+                            <!-- Ms computer science - core.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Ms computer science - core.png</h3>
+                                <button class="btn btn-light border" onclick="viewImage('Ms computer science - core.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-Ms-computer-science-core" onchange="browseFile('Ms-computer-science-core','input-Ms-computer-science-core')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('Ms-computer-science-core','input-Ms-computer-science-core')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('Ms computer science - core.png','Ms-computer-science-core','input-Ms-computer-science-core','upProgress-Ms-computer-science-core')">Upload & Update Image</button> 
+                                    <label id="upProgress-Ms-computer-science-core"></label>
+                                </div>
+                                <img id="Ms-computer-science-core" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- Ms computer science - core.png END-->
+
+                            <!-- project detail ms cs.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">project detail ms cs.png (master in computer science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('project detail ms cs.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-project-detail-ms-cs" onchange="browseFile('project-detail-ms-cs','input-project-detail-ms-cs')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('project-detail-ms-cs','input-project-detail-ms-cs')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('project detail ms cs.png','project-detail-ms-cs','input-project-detail-ms-cs','upProgress-project-detail-ms-cs')">Upload & Update Image</button> 
+                                    <label id="upProgress-project-detail-ms-cs"></label>
+                                </div>
+                                <img id="project-detail-ms-cs" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- project detail ms cs.png END-->
+
+                            <!-- elective ms cs.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">elective ms cs.png (master in computer science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('elective ms cs.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-elective-ms-cs" onchange="browseFile('elective-ms-cs','input-elective-ms-cs')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('elective-ms-cs','input-elective-ms-cs')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('elective ms cs.png','elective-ms-cs','input-elective-ms-cs','upProgress-elective-ms-cs')">Upload & Update Image</button> 
+                                    <label id="upProgress-elective-ms-cs"></label>
+                                </div>
+                                <img id="elective-ms-cs" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- elective ms cs.png END-->
+
+                            <!-- 1_y_scheme_ms_cs.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">1_y_scheme_ms_cs.png (master in computer science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('1_y_scheme_ms_cs.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-1_y_scheme_ms_cs" onchange="browseFile('1_y_scheme_ms_cs','input-1_y_scheme_ms_cs')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('1_y_scheme_ms_cs','input-1_y_scheme_ms_cs')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('1_y_scheme_ms_cs.png','1_y_scheme_ms_cs','input-1_y_scheme_ms_cs','upProgress-1_y_scheme_ms_cs')">Upload & Update Image</button> 
+                                    <label id="upProgress-1_y_scheme_ms_cs"></label>
+                                </div>
+                                <img id="1_y_scheme_ms_cs" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- 1_y_scheme_ms_cs.png END-->
+                            
+                            <!-- 1.5_y_scheme_ms_cs.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">1.5_y_scheme_ms_cs.png (master in computer science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('1.5_y_scheme_ms_cs.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-1.5_y_scheme_ms_cs" onchange="browseFile('1.5_y_scheme_ms_cs','input-1.5_y_scheme_ms_cs')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('1.5_y_scheme_ms_cs','input-1.5_y_scheme_ms_cs')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('1.5_y_scheme_ms_cs.png','1.5_y_scheme_ms_cs','input-1.5_y_scheme_ms_cs','upProgress-1.5_y_scheme_ms_cs')">Upload & Update Image</button> 
+                                    <label id="upProgress-1.5_y_scheme_ms_cs"></label>
+                                </div>
+                                <img id="1.5_y_scheme_ms_cs" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- 1.5_y_scheme_ms_cs.png END-->
+
+                            <!-- 2_y_scheme_ms_cs.jpg -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">2_y_scheme_ms_cs.jpg (master in computer science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('2_y_scheme_ms_cs.jpg')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-2_y_scheme_ms_cs" onchange="browseFile('2_y_scheme_ms_cs','input-2_y_scheme_ms_cs')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('2_y_scheme_ms_cs','input-2_y_scheme_ms_cs')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('2_y_scheme_ms_cs.jpg','2_y_scheme_ms_cs','input-2_y_scheme_ms_cs','upProgress-2_y_scheme_ms_cs')">Upload & Update Image</button> 
+                                    <label id="upProgress-2_y_scheme_ms_cs"></label>
+                                </div>
+                                <img id="2_y_scheme_ms_cs" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- 2_y_scheme_ms_cs.jpg END-->
+
+                            <!-- 2.5_y_scheme_ms_cs.png -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">2.5_y_scheme_ms_cs.png (master in computer science)</h3>
+                                <button class="btn btn-light border" onclick="viewImage('2.5_y_scheme_ms_cs.png')">View Image</button> 
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-2.5_y_scheme_ms_cs" onchange="browseFile('2.5_y_scheme_ms_cs','input-2.5_y_scheme_ms_cs')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearitem('2.5_y_scheme_ms_cs','input-2.5_y_scheme_ms_cs')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updateImage('2.5_y_scheme_ms_cs.png','2.5_y_scheme_ms_cs','input-2.5_y_scheme_ms_cs','upProgress-2.5_y_scheme_ms_cs')">Upload & Update Image</button> 
+                                    <label id="upProgress-2.5_y_scheme_ms_cs"></label>
+                                </div>
+                                <img id="2.5_y_scheme_ms_cs" src="" height="200" alt="Image preview...">
+                                </div>
+                            </div><!-- 2.5_y_scheme_ms_cs.png END-->
+
+                          </div>
+                        </div>
+                    </div><!-- master-in-computer-science END-->
+                
+                </div>  <!-- accordion-picture END -->
+
+
+                
+
+            </div> <!-- card body end -->
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 2rem;">
+        <div class="card border">
+            <div class="card-body">
+                <h2 class="card-title"><mark style="background-color:rgb(212, 235, 189);">Updates PDF</mark></h2>
+                <p class="card-text">You can update the PDF on AskShela Chatbot.</p>
+                <hr>
+
+                <!-- accordion-pdf -->
+                <div class="accordion" id="accordion-pdf">
+                    <!--pdf-registration-->
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="header-pdf-registration">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-pdf-registration" aria-expanded="true" aria-controls="collapse-pdf-registration">
+                            <h3 class="card-title"><mark>Registration (PDF)</mark></h3>
+                        </button>
+                      </h2>
+                      <div id="collapse-pdf-registration" class="accordion-collapse collapse " aria-labelledby="header-pdf-registration" data-bs-parent="#accordion-pdf">
+                        <div class="accordion-body">
+
+                            <!--REGISTRATION_GUIDELINES_CWMM_MAINCAMPUS.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Registration Guidelines for Coursework & Mixed Mode</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FREGISTRATION_GUIDELINES_CWMM_MAINCAMPUS.pdf?alt=media&token=dc1d286f-14a5-4490-8f22-4e7c48915214', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-registration-cmm" onchange="browseFile('iframe-registration-cmm','input-registration-cmm')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-registration-cmm','input-registration-cmm')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('REGISTRATION_GUIDELINES_CWMM_MAINCAMPUS.pdf','iframe-registration-cmm','input-registration-cmm','upProgress-registration-cmm')">Upload & Update PDF</button> 
+                                    <label id="upProgress-registration-cmm"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-registration-cmm" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- REGISTRATION_GUIDELINES_CWMM_MAINCAMPUS.pdf END-->
+
+                            <!--REGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_INTERNATIONAL.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Registration Guideline for International Student</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FREGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_INTERNATIONAL.pdf?alt=media&token=68fca9c8-38b9-4264-9f03-dba698849caa', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-registration-international" onchange="browseFile('iframe-registration-international','input-registration-international')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-registration-international','input-registration-international')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('REGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_INTERNATIONAL.pdf','iframe-registration-international','input-registration-international','upProgress-registration-international')">Upload & Update PDF</button> 
+                                    <label id="upProgress-registration-international"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-registration-international" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- REGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_INTERNATIONAL.pdf END-->
+
+                            <!--REGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_MALAYSIAN.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Registration guideline for Malaysian students</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FREGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_MALAYSIAN.pdf?alt=media&token=89810656-5b1a-4caf-8860-146704a3a364', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-registration-malaysian" onchange="browseFile('iframe-registration-malaysian','input-registration-malaysian')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-registration-malaysian','input-registration-malaysian')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('REGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_MALAYSIAN.pdf','iframe-registration-malaysian','input-registration-malaysian','upProgress-registration-malaysian')">Upload & Update PDF</button> 
+                                    <label id="upProgress-registration-malaysian"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-registration-malaysian" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- REGISTRATION_GUIDELINES_STEPS_AND_FORMS_RESEARCH_MALAYSIAN.pdf END-->
+                        </div>
+                     </div>
+
+
+                    </div>
+
+                    <!--pdf-timetable_calendar-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="header-pdf-timetable_calendar">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-pdf-timetable_calendar" aria-expanded="true" aria-controls="collapse-pdf-timetable_calendar">
+                              <h3 class="card-title"><mark>Timetable and Calendar (PDF)</mark></h3>
+                          </button>
+                        </h2>
+                        <div id="collapse-pdf-timetable_calendar" class="accordion-collapse collapse " aria-labelledby="header-pdf-timetable_calendar" data-bs-parent="#accordion-pdf">
+                          <div class="accordion-body">
+
+                            <!--ACADEMIC_CALENDAR.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Academic Calendar</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FACADEMIC_CALENDAR.pdf?alt=media&token=54a4c10b-72a1-428b-895d-bf7c780e3b00', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-academic-calendar" onchange="browseFile('iframe-academic-calendar','input-academic-calendar')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-academic-calendar','input-academic-calendar')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('ACADEMIC_CALENDAR.pdf','iframe-academic-calendar','input-academic-calendar','upProgress-academic-calendar')">Upload & Update PDF</button> 
+                                    <label id="upProgress-academic-calendar"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-academic-calendar" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- ACADEMIC_CALENDAR.pdf END-->
+
+                            <!--CS_Timetable.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">CS Timetable</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FCS_Timetable.pdf?alt=media&token=6a8256a2-d50d-4183-bfdd-3f1614720d5a', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-cs-timetable" onchange="browseFile('iframe-cs-timetable','input-cs-timetable')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-cs-timetable','input-cs-timetable')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('CS_Timetable.pdf','iframe-cs-timetable','input-cs-timetable','upProgress-cs-timetable')">Upload & Update PDF</button> 
+                                    <label id="upProgress-cs-timetable"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-cs-timetable" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- CS_Timetable.pdf END-->
+
+                          </div>
+                        </div>
+                    </div><!--pdf-timetable_calendar END-->
+
+                    <!--pdf-useful_forms-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="header-pdf-useful-forms">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-pdf-useful-forms" aria-expanded="true" aria-controls="collapse-pdf-useful-forms">
+                              <h3 class="card-title"><mark>Useful Forms (Drop,Smart Card Application, Add Forms)</mark></h3>
+                          </button>
+                        </h2>
+                        <div id="collapse-pdf-useful-forms" class="accordion-collapse collapse " aria-labelledby="header-pdf-useful-forms" data-bs-parent="#accordion-pdf">
+                          <div class="accordion-body">
+
+                            <!-- DROP_FORM.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Drop Form</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FDROP_FORM.pdf?alt=media&token=8346b7bb-ff4f-472e-9038-6db12c20d5a8', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-drop-form" onchange="browseFile('iframe-drop-form','input-drop-form')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-drop-form','input-drop-form')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('DROP_FORM.pdf','iframe-drop-form','input-drop-form','upProgress-drop-form')">Upload & Update PDF</button> 
+                                    <label id="upProgress-drop-form"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-drop-form" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- DROP_FORM.pdf END-->
+
+                            <!-- ADD_FORM.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Add Form</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FADD_FORM.pdf?alt=media&token=2096d610-ae87-483a-a55a-d78bc901053f', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-add-form" onchange="browseFile('iframe-add-form','input-add-form')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-add-form','input-add-form')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('ADD_FORM.pdf','iframe-add-form','input-add-form','upProgress-add-form')">Upload & Update PDF</button> 
+                                    <label id="upProgress-add-form"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-add-form" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- ADD_FORM.pdf END-->
+
+                            <!-- Smart Card Application Form.pdf -->
+                            <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Smart Card Application Form</h3> 
+                                <button class="btn btn-light border" onClick="javascript:window.open('https://firebasestorage.googleapis.com/v0/b/askshela-4e0e2.appspot.com/o/AskShela_pdf%2FSmart%20Card%20Application%20Form.pdf?alt=media&token=1fac4627-368f-455f-81f9-db2ec1180b17', '_blank');">View Pdf</button>
+
+                                <div class="horizontal-align">
+                                    <input  type="file" id="input-smart-card-application" onchange="browseFile('iframe-smart-card-application','input-smart-card-application')"><br>
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="clearpdf('iframe-smart-card-application','input-smart-card-application')">Clear</button>
+                                    <button class="btn btn-light border" onclick="updatePdf('Smart Card Application Form.pdf','iframe-smart-card-application','input-smart-card-application','upProgress-smart-card-application')">Upload & Update PDF</button> 
+                                    <label id="upProgress-smart-card-application"></label>
+                                </div>
+                                <div class="horizontal-align"></div>
+                                    <iframe id="iframe-smart-card-application" class="border" src="data:text/html;charset=utf-8,%3Chtml%3E%3Cbody%3eEmpty Pdf%3C/body%3E%3C/html%3E"  style="width:25rem; height:25rem;" frameborder="0"></iframe>    
+                                </div>
+                            </div><!-- Smart Card Application Form.pdf END-->
+                        
+                          </div>
+                        </div>
+                    </div><!--pdf-useful_forms END-->
+
+
+                </div><!-- accordion-pdf END-->
+    
+            </div> <!-- card body end -->
+        </div>
+    </div>
+                
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.2/firebase-storage.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+    </body>
+
+</html>

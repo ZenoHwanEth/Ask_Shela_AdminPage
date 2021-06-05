@@ -1,0 +1,82 @@
+.bd-navbar{
+    padding: 0.75em;
+    background-color: orange;
+}
+
+h4{
+    color:whitesmoke;
+    font-weight: bolder;
+}
+
+.border{
+    border: 1px solid rgb(27, 5, 5);
+    border-radius: .25rem; 
+}
+
+.card-body{
+    padding: 1rem 1rem;
+}
+
+.horizontal-align{
+    display: flex; 
+    flex-wrap: wrap;
+    align-items:center;
+
+}
+
+button, input, img{
+   margin-right: 1rem;
+}
+
+/*pictures*/
+.enlarge-modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+  }
+  
+  .modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+  }
+  
+  .close_modal {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close_modal:hover,
+  .close_modal:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .spacing-bottom{
+    margin-bottom: 1rem;
+  }
