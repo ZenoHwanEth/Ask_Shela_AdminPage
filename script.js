@@ -13,6 +13,32 @@ var firebaseConfig = {
 firebase.initializeApp(firebaseConfig);
 
 var imageStorage = firebase.storage().ref().child('AskShela_resources');
+var database = firebase.database().ref();
+
+(async()=>{
+    
+    await database.child("newstudentpadletlink").get().then((snapshot) =>{
+        document.getElementById("padlet-new-student-link").value = snapshot.val()
+    })
+
+})()
+
+async function updatelink(path,link,status,disableinput){
+    value = document.getElementById(path).value;
+
+    if(/^https:/.test(value)){
+        firebase.database().ref(link).set(value);
+        await database.child(link).get().then((snapshot) =>{
+            document.getElementById(disableinput).value = snapshot.val()
+        })
+        document.getElementById(path).value = ""
+        document.getElementById(status).innerHTML="Done!!"    
+    }else if(value!=""){
+        alert("Make sure it is in https:/ !!");
+    }
+    
+}
+
 
 var span = document.getElementsByClassName("close_modal")[0];
 span.onclick = function() {
