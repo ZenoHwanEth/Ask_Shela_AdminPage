@@ -92,7 +92,6 @@ function updateImage(imagename,previewlocation,inputlocation,upprogress){
 
         uploadtask.on('state_changed', function(snapshot){
             var progress = (snapshot.bytesTransferred/snapshot.totalBytes)* 100;
-            console.log(progress)
             document.getElementById(upprogress).innerHTML = 'Upload '+ (progress).toFixed(2)+' %';
     
             if(progress==100){
