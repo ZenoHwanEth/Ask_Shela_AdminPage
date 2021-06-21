@@ -463,6 +463,31 @@
                       </h2>
                       <div id="collapse-padlet" class="accordion-collapse collapse" aria-labelledby="header-padlet" data-bs-parent="#accordion-padlet">
                         <div class="accordion-body">
+
+
+                             <!-- padlet potential students link -->
+                             <div  class="card border spacing-bottom">
+                                <div style="padding:3rem">
+                                <h3 class="card-title">Padlet for potential students</h3>
+                                <p>Here is the current link</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon2">Current Link</span>
+                                    </div>
+                                    <input id="padlet-potential-student-link" type="text" disabled="disabled" class="form-control" placeholder="" aria-label="link" aria-describedby="basic-addon2">
+                                </div>
+                                <p>Please put your updated link</p>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-prepend">
+                                      <span class="input-group-text" id="basic-addon2">Update Link</span>
+                                    </div>
+                                    <input id="input-padlet-potential-student-link" type="text" class="form-control" placeholder="" aria-label="link" aria-describedby="basic-addon1">
+                                    <button class="btn btn-light border" class="btn btn-light"onclick="updatelink('input-padlet-potential-student-link','potentialstudentpadletlink','status-padlet-potential-student-link','padlet-potential-student-link')">Confirm Update</button>
+                                </div>
+                                <label id="status-padlet-potential-student-link"></label>
+                                </div>
+                            </div><!-- padlet potential students link-->
+
                             <!-- padlet new students link -->
                             <div  class="card border spacing-bottom">
                                 <div style="padding:3rem">
@@ -484,30 +509,7 @@
                                 </div>
                                 <label id="status-padlet-new-student-link"></label>
                                 </div>
-                            </div><!-- padlet new students link-->
-
-                            <!-- padlet potential students link -->
-                            <div  class="card border spacing-bottom">
-                                <div style="padding:3rem">
-                                <h3 class="card-title">Padlet for potential students</h3>
-                                <p>Here is the current link</p>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text" id="basic-addon2">Current Link</span>
-                                    </div>
-                                    <input id="padlet-potential-student-link" type="text" disabled="disabled" class="form-control" placeholder="" aria-label="link" aria-describedby="basic-addon2">
-                                </div>
-                                <p>Please put your updated link</p>
-                                <div class="input-group mb-3">
-                                    <div class="input-group-prepend">
-                                      <span class="input-group-text" id="basic-addon2">Update Link</span>
-                                    </div>
-                                    <input id="input-padlet-potential-student-link" type="text" class="form-control" placeholder="" aria-label="link" aria-describedby="basic-addon1">
-                                    <button class="btn btn-light border" class="btn btn-light"onclick="updatelink('input-padlet-potential-student-link','potentialstudentpadletlink','status-padlet-potential-student-link','padlet-potential-student-link')">Confirm Update</button>
-                                </div>
-                                <label id="status-padlet-potential-student-link"></label>
-                                </div>
-                            </div><!-- padlet potential students link-->
+                            </div><!-- padlet new students link-->     
 
                         </div>
                         </div>
