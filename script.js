@@ -21,6 +21,10 @@ var database = firebase.database().ref();
         document.getElementById("padlet-new-student-link").value = snapshot.val()
     })
 
+    await database.child("potentialstudentpadletlink").get().then((snapshot) =>{
+        document.getElementById("padlet-potential-student-link").value = snapshot.val()
+    })
+
 })()
 
 async function updatelink(path,link,status,disableinput){
@@ -88,6 +92,7 @@ function updateImage(imagename,previewlocation,inputlocation,upprogress){
 
         uploadtask.on('state_changed', function(snapshot){
             var progress = (snapshot.bytesTransferred/snapshot.totalBytes)* 100;
+            console.log(progress)
             document.getElementById(upprogress).innerHTML = 'Upload '+ (progress).toFixed(2)+' %';
     
             if(progress==100){
